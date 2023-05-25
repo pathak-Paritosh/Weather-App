@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(223, 219, 219);
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+
+label {
+  display: block;
+}
+
+input {
+  width: 70%;
+  margin-top: 4px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.weather-condition {
+  margin-top: 2px;
+  opacity: 0.5;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 10px;
+  max-width: 250px;
+  margin: auto;
+  margin-top: 17px;
+}
+
+img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+}
+
+.show-temperature {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.city {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
+.temp-val, .temp-symbol {
+  font-size: 1.5em;
+}
+
+.d-none{
+  display: none;
+}
+
+.icon {
+  width: 100px;
+  margin: auto;
+  position: relative;
+  top: -55px;
+  background-color: rgb(247, 237, 237);
+  border-radius: 50%;
+  margin-bottom: -50px;
+}

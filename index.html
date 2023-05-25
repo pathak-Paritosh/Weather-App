@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Weather App</h1>
+    <form class="enter-location">
+      <label for="city">Enter a location to get Weather</label>
+      <input type="text" id="city" name="city">
+    </form>
+
+    <div class="card d-none">
+      <img src="https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=442&q=80"
+      height="250px" class="time">
+      <div class="icon">
+        <img src="" alt="" width="100px" height="100px">
+      </div>
+      <div class="weather-details">
+        <h4 class="city">CITY NAME</h5>
+        <div class="weather-condition">Weather Condition</div>
+        <div class="show-temperature">
+          <span class="temp-val">12.5</span>
+          <span class="temp-symbol">&deg;C</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

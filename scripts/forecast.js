@@ -4,7 +4,7 @@ const key = 'o1WAm6njibi2XTCEGduE6AFDfepwZGT6';
 
 // getWeather() takes city code and gives info of weather.
 const getWeather = async (id) => {
-  const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+  const base = 'https://dataservice.accuweather.com/currentconditions/v1/';
   const query = `${id}?apikey=${key}`;
   const response = await fetch(base + query);
   const data = await response.json();
@@ -18,7 +18,7 @@ const getWeather = async (id) => {
 // getCity() takes city name and gives the city code
 const getCity = async (city) => {
   // base is the API end point
-  const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+  const base = 'https://dataservice.accuweather.com/locations/v1/cities/search';
 
   // for making any API request, only API end point is not enough, we need
   // a query parameter. query parameter starts with '?' symbol.
